@@ -100,10 +100,10 @@ begin
 		print'>> ----------------';
 
 		set @start_time = getdate();
-		print'>>truncating Table:bronze.erp_az12'
-		truncate table bronze.erp_az12;	
-		print'>>inserting data into:bronze.erp_az12'
-		bulk insert bronze.erp_az12
+		print'>>truncating Table:bronze.erp_cust_az12'
+		truncate table bronze.erp_cust_az12;	
+		print'>>inserting data into:bronze.erp_cust_az12'
+		bulk insert bronze.erp_cust_az12
 		from 'C:\Users\nishal.r\Downloads\sql-data-warehouse-project 2\sql-data-warehouse-project\datasets\source_erp\cust_az12.csv'
 		with (
 			firstrow = 2,
